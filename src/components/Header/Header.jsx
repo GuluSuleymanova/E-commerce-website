@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import '../Header/header.css'
 import {useSelector} from 'react-redux';
 
@@ -22,8 +22,14 @@ function Header() {
 
  };
  const classes = `header-bottom  ${sticky}`;
+ const navigate=useNavigate();
 
- 
+ const handlelogout =()=>{
+  localStorage.removeItem('loginmail');
+  localStorage.removeItem('loginpassword');
+  navigate('/')
+
+ }
 
   return (
     <div className='header'>
@@ -79,6 +85,26 @@ function Header() {
             </ul>
             <div className="d-flex icon-cart">
               <NavLink to='/cart'><button className="btn" activeclassname='active' type="submit"><i className="fa-solid fa-cart-arrow-down"></i><span>[{card?.length}]</span></button></NavLink>
+            </div>
+            <div className=" d-flex person-icon">
+            <li className="nav-item dropdown">
+                <NavLink className="nav-link dropdown-toggle"activeclassname='active' role="button" data-bs-toggle="collapse" aria-expanded="false">
+                <i className="fa-solid fa-user me-2"></i>
+                <span>{localStorage.getItem("loginmail")}</span>
+                </NavLink>
+                <ul className="dropdown-menu">
+                  <li>
+                  {localStorage.getItem('loginmail') ?
+                  <p id='p' className='dropdown-item' onClick={handlelogout}>Logout</p>:
+                <p className='dropdown-item' onClick={()=>navigate('/login')}>Login</p>}
+                  </li>
+            <li>
+               
+                <p className='dropdown-item' onClick={()=>navigate('/signup')}>SignUp</p> </li>
+                </ul>
+              </li>
+               
+             
             </div>
           </div>
         </div>

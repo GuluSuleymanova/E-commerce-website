@@ -4,6 +4,7 @@ footer {
   padding: 7em 0;
   font-family: "Poppins", Arial, sans-serif;
 }
+
 footer .footer-top .scroll button.scrolltoUp {
   width: 60px;
   height: 60px;
@@ -13,79 +14,100 @@ footer .footer-top .scroll button.scrolltoUp {
   position: absolute;
   top: -30px;
   left: calc(50% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
   cursor: pointer;
   z-index: 111 !important;
 }
+
 footer .footer-top .scroll button.scrolltoUp i {
   color: #fff;
   font-size: 19px;
-  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
   -webkit-animation: scroll_top 1.6s ease infinite;
           animation: scroll_top 1.6s ease infinite;
 }
+
 @-webkit-keyframes scroll_top {
   0% {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
+
 @keyframes scroll_top {
   0% {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   40% {
     opacity: 1;
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
+
 footer .footer-top h5 {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 500;
   color: #000000;
 }
+
 footer .footer-top p {
   margin-bottom: 1rem;
   font-size: 14px;
   color: #000000;
   line-height: 1.8;
 }
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
     visibility: hidden;
-    transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
   }
   to {
     visibility: visible;
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
     visibility: hidden;
-    transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
   }
   to {
     visibility: visible;
     opacity: 1;
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
+
 footer .footer-top .social-icons a {
   text-decoration: none;
   margin-bottom: 30px !important;
@@ -98,21 +120,25 @@ footer .footer-top .social-icons a {
   position: relative;
   color: #000000;
   margin: 0 10px 0 0;
-  -webkit-animation: fadeInUp 1s both;
-          animation: fadeInUp 1s both;
+  -webkit-animation: fadeInUp  1s both;
+          animation: fadeInUp  1s both;
 }
+
 footer .footer-top .social-icons a i {
   position: absolute;
   font-size: 26px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
+
 footer .footer-top ul {
   list-style: none;
   padding-left: 0;
   font-size: 14px;
 }
+
 footer .footer-top ul li a {
   color: #000000;
   text-decoration: none;
@@ -120,20 +146,25 @@ footer .footer-top ul li a {
   padding-bottom: 0.5rem;
   display: block;
 }
+
 footer .footer-top ul li .icon {
   width: 40px;
   display: table-cell;
 }
+
 footer .footer-top ul li span {
   display: table-cell;
 }
+
 footer .footer-bottom p {
   margin-bottom: 1rem;
   font-size: 14px;
   color: #000000;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 footer .footer-bottom p a {
   text-decoration: none;
   color: #82ae46;
-}/*# sourceMappingURL=footer.css.map */
+}
+/*# sourceMappingURL=footer.css.map */

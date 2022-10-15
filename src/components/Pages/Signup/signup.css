@@ -1,0 +1,116 @@
+.signup {
+  position: relative;
+}
+
+.signup .bg2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .head-title {
+  color: #fff;
+}
+
+.signup .form-parts {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.signup .form-parts .form-group1 {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.signup .form-parts .form-group1 input {
+  padding-left: 20px;
+  height: 56px;
+  width: 100%;
+  border: 1px solid #82ae46;
+  border-radius: 10px;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #eee;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.signup .form-parts .form-group1 input:focus {
+  border: 1px solid black;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.signup .form-parts .form-group1 p {
+  color: red;
+  font-size: 14px;
+}
+
+.signup .form-parts .button {
+  border: 1px solid #82ae46;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.signup .form-parts .button:hover {
+  background-color: #82ae46 !important;
+  color: #fff;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.signup .form-parts .links span {
+  color: #82ae46;
+}
+
+.signup .form-parts .link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  letter-spacing: 1px;
+}
+
+.signup .form-parts .link:hover {
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.signup .form-parts .link2 {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.signup .form-parts .link2:hover {
+  color: #82ae46;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/*# sourceMappingURL=signup.css.map */

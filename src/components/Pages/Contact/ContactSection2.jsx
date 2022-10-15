@@ -26,17 +26,17 @@ function ContactSection2() {
         }
 
         emailjs.sendForm(
-            "service_id4a8sc",
-            'template_59ztiin',
+            "service_9v5lww6",
+            'template_c82cvzd',
             form.current,
-            'qIaLyS3lNkUu1vQ56'
-        )
-            // .then((result) => {
-            //     console.log(result.text);
-            //     alert("Your message send:)");
-            // }, (error) => {
-            //     console.log(error.text);
-            // });
+            'rIgbOjL-y0rxOEu6Q'
+         )
+        //     .then((result) => {
+        //         console.log(result.text);
+               
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
     };
 
     return (
@@ -62,11 +62,11 @@ function ContactSection2() {
                             <form ref={form} onSubmit={sendEmail}>
 
                                 <div className="form-group ">
-                                    <input type="text" name='user_name' id='text' className="form-control" placeholder="Your Name" required />
+                                    <input type="text" name='user_name' className="form-control" placeholder="Your Name" required />
                                 </div>
 
                                 <div className=" form-group ">
-                                    <input type="email" name='user_email' id='ml' className="form-control" placeholder="Your Email" required />
+                                    <input type="email" name='user_email'  className="form-control" placeholder="Your Email" required />
                                 </div>
 
                                 <div className="form-group">
@@ -93,3 +93,6 @@ function ContactSection2() {
 }
 
 export default ContactSection2
+
+
+

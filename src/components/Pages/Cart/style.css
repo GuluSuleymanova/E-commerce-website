@@ -3,13 +3,20 @@
 }
 
 .div-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100px;
   padding: 10px;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: whitesmoke;
 }
+
 .div-table button {
   cursor: pointer !important;
   font-size: 15px !important;
@@ -23,10 +30,12 @@ p {
   background-color: #82AE46;
   padding: 20px 10px;
 }
+
 .table-cart .MuiTableHead-root .MuiTableCell-root {
   color: #fff;
   font-family: "Poppins";
 }
+
 .table-cart .MuiTableBody-root .MuiTableRow-root .MuiTableCell-root {
   font-size: 15px;
   color: #000;
@@ -41,9 +50,16 @@ p {
 .form {
   border: 2px solid black;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid rgba(0, 0, 0, 0.05);
   text-align: left;
   margin-left: 10px;
@@ -56,6 +72,7 @@ p {
   font-weight: 400;
   color: #000;
 }
+
 .content p {
   margin-bottom: 1rem;
   color: gray;
@@ -63,6 +80,7 @@ p {
   line-height: 1.8;
   font-size: 15px;
 }
+
 .content label {
   font-size: 13px;
   color: #000;
@@ -71,6 +89,7 @@ p {
   line-height: 1.8;
   display: block;
 }
+
 .content input {
   display: block;
   width: 100%;
@@ -81,9 +100,11 @@ p {
   background-color: #fff;
   padding-left: 1rem;
 }
+
 .content input:focus {
   outline: none;
 }
+
 .content .span-margin {
   margin-right: 200px;
 }
@@ -100,14 +121,21 @@ p {
 
 .div-img {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 420px;
   background: url(../../../assets/images/slider/slider_1.jpg);
   background-position: center;
   background-size: cover;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .div-img h1 {
   color: #fff;
   font-weight: 800;
@@ -119,11 +147,22 @@ p {
 
 .empty-card {
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .empty-card .MuiSvgIcon-root {
   font-size: 40px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

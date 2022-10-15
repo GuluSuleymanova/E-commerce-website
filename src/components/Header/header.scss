@@ -5,7 +5,7 @@ margin-top: 0; // remove the gap so it doesn't close
 }
 
 .is-sticky {
-    position: fixed;
+    position: fixed ;
     display: block;
     top: 0;
     left: 0;
@@ -17,6 +17,7 @@ margin-top: 0; // remove the gap so it doesn't close
     padding-top: 0px;
     padding-bottom: 0px;
     transition: all 1s;
+
 
     .navbar-brand{
         color: #000 !important;
@@ -152,6 +153,7 @@ color:white !important;
 font-weight: 500;
 padding-left: 20px;
 transition: all 2s;
+cursor: pointer;
 }
 
 .active{

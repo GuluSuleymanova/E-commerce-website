@@ -8,8 +8,10 @@
   font-size: 15px;
   font-weight: 400;
   padding: 10px;
+  -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
+
 .product button {
   all: unset;
   cursor: pointer;
@@ -36,6 +38,7 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
+  -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
 
@@ -45,6 +48,7 @@
   width: 100%;
   background-color: #fff;
 }
+
 .text h3 {
   color: #000;
   font-weight: 300;
@@ -52,6 +56,8 @@
 }
 
 .d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
 }
 
@@ -74,6 +80,7 @@
   color: white;
   font-size: 20px;
 }
+
 .overlay .icon {
   background-color: #82ae46;
   border-radius: 50%;
@@ -84,28 +91,41 @@
 }
 
 .product:hover .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10px;
 }
+
 .product:hover .d-flex {
   display: none !important;
 }
 
 .img-fluid:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .div-img {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 420px;
   background: url(../../../assets/images/slider/slider_2.jpg);
   background-position: center;
   background-size: cover;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .div-img h1 {
   color: #fff;
   font-weight: 800;
@@ -120,6 +140,7 @@
   margin-top: 30px;
   text-align: center;
 }
+
 .button-group button {
   all: unset;
   background-color: #82ae46;
@@ -128,4 +149,5 @@
   padding: 5px 20px;
   border-radius: 10px;
   cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
